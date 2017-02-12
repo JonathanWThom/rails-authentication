@@ -9,6 +9,15 @@
   </head>
 
   <body>
+    <%= link_to 'Home', '/'%>
+    <%= link_to 'Log In', log_in_path %>
+    <%= link_to 'Log Out', log_out_path %>
+    <%= link_to 'New User', new_user_path %>
+    <%= flash[:notice] %>
+    <%= flash[:alert] %>
+    <% if logged_in? %>
+      Welcome, <%= current_user.email %>
+    <% end -%>
     <%= yield %>
   </body>
 </html>
