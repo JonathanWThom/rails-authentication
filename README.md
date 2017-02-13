@@ -1,24 +1,17 @@
-# README
+# Rails Authentication
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Practice using the BCrypt gem for user authentication
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+```
+git clone https://github.com/JonathanWThom/rails-authentication
+cd rails-authentication
+rake db:create
+rake db:migrate
+rails s
+```
 
-* System dependencies
+## License
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+MIT
